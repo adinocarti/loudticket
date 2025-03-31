@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class MonsterHunterApiService {
+export class LoudticketapiService {
   private baseUrl = 'https://app.ticketmaster.com/discovery/v2';
 
   constructor(private http: HttpClient) {}
