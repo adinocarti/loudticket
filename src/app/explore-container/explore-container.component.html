@@ -9,4 +9,11 @@
       >UI Components</a
     >
   </p>
+
+  <ul>
+    <li *ngFor="let e of events">
+      {{ e.name }} — {{ e.dates.start.localDate }}
+    </li>
+  </ul>
+
 </div>
