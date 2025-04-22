@@ -15,32 +15,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  z-index: 2;
+}
 
-  .logo-text {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 45px;
-    line-height: 62.19px;
-    font-family: 'Bagel Fat One', cursive;
-    font-weight: 400;
-    word-wrap: break-word;
-  }
+.logo-text {
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  line-height: 62.19px;
+  font-family: 'Bagel Fat One', cursive;
+  font-weight: 400;
+  word-wrap: break-word;
+}
 
-  .loud-text {
-    color: #5669FF;
-  }
+.loud-text {
+  color: #5669FF;
+  margin-right: 8px;
+}
 
-  .icket-text {
-    color: #4DB7EC;
-  }
+.icket-text {
+  color: #4DB7EC;
+  margin-left: 8px;
+}
 
-  .t-svg {
-    width: 80px;
-    height: auto;
-    margin: 0 5px;
-  }
+.t-svg {
+  height: 44px;
+  width: 161px;
+  margin: 0 4px;
 }
 
 .ellipse {
@@ -49,7 +49,6 @@
   filter: blur(50px);
   box-shadow: 100px 100px 100px;
   opacity: 0.5;
-  z-index: 0;
 }
 
 .ellipse-top {
@@ -57,13 +56,7 @@
   height: 209px;
   top: -100px;
   right: 0;
-  background: conic-gradient(
-      from 180deg at 50% 50%,
-      rgba(185, 218, 251, 0.4) 0deg,
-      rgba(152, 149, 238, 0.4) 0deg,
-      rgba(197, 84, 146, 0.4) 0deg,
-      rgba(236, 172, 173, 0.4) 96deg
-  );
+  background: conic-gradient(from 180deg at 50% 50%, rgba(185, 218, 251, 0.4) 0deg, rgba(152, 149, 238, 0.4) 0deg, rgba(197, 84, 146, 0.4) 0deg, rgba(236, 172, 173, 0.4) 96deg);
 }
 
 .ellipse-bottom-left {
@@ -71,14 +64,7 @@
   height: 153px;
   bottom: -60px;
   left: -60px;
-  background: conic-gradient(
-      from 180deg at 50% 50%,
-      rgba(185, 218, 251, 0.5) 0deg,
-      rgba(236, 172, 173, 0.5) 96deg,
-      rgba(152, 149, 238, 0.5) 206deg,
-      rgba(144, 162, 248, 0.5) 292deg,
-      rgba(197, 84, 146, 0.5) 360deg
-  );
+  background: conic-gradient(from 180deg at 50% 50%, rgba(185, 218, 251, 0.5) 0deg, rgba(236, 172, 173, 0.5) 96deg, rgba(152, 149, 238, 0.5) 206deg, rgba(144, 162, 248, 0.5) 292deg, rgba(197, 84, 146, 0.5) 360deg);
 }
 
 .ellipse-bottom-right {
@@ -86,12 +72,5 @@
   height: 322px;
   bottom: -80px;
   right: -100px;
-  background: conic-gradient(
-      from 180deg at 50% 50%,
-      rgba(185, 218, 251, 0.5) 0deg,
-      rgba(236, 172, 173, 0.5) 96deg,
-      rgba(152, 149, 238, 0.5) 206deg,
-      rgba(144, 162, 248, 0.5) 292deg,
-      rgba(197, 84, 146, 0.5) 360deg
-  );
+  background: conic-gradient(from 180deg at 50% 50%, rgba(185, 218, 251, 0.5) 0deg, rgba(236, 172, 173, 0.5) 96deg, rgba(152, 149, 238, 0.5) 206deg, rgba(144, 162, 248, 0.5) 292deg, rgba(197, 84, 146, 0.5) 360deg);
 }
