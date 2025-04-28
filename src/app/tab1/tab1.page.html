@@ -1,25 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-
-    </ion-title>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <!-- Splash Screen -->
-  <div class="splash-screen">
-    <!-- Background Gradient Circles -->
+  <div class="splash-screen" id="splashScreen">
+    <!-- Background Ellipses -->
     <div class="ellipse ellipse-top"></div>
     <div class="ellipse ellipse-bottom-left"></div>
     <div class="ellipse ellipse-bottom-right"></div>
 
-    <!-- Centered Logo with Stylized T -->
-    <div class="logo-container">
+    <!-- Centered Logo -->
+    <div class="logo-container" id="logoContainer">
       <div class="logo-text">
         <span class="loud-text">loud</span>
-        <span class="stylized-t">
-          <svg width="80" height="44" viewBox="0 0 161 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="t-icon">
+          <svg width="161" height="44" viewBox="0 0 161 44" fill="none" xmlns="http://www.w3.org/2000/svg">
             <ellipse cx="80.5" cy="5" rx="80.5" ry="5" fill="#4DB7EC"/>
             <path d="M46 27C46 36.3888 44.2091 44 42 44C39.7909 44 38 36.3888 38 27C38 17.6112 39.7909 10 42 10C44.2091 10 46 17.6112 46 27Z" fill="#4DB7EC"/>
           </svg>
@@ -28,9 +25,8 @@
       </div>
     </div>
   </div>
-
-  <!-- Hidden actual app content or loader -->
 </ion-content>
 
+<!-- Font Links (gehören in index.html head!) -->
 <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@600&display=swap" rel="stylesheet">

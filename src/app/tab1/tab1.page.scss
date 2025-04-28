@@ -11,46 +11,51 @@
 }
 
 .logo-container {
-  position: relative;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  z-index: 10;
+  animation: float 3s ease-in-out infinite; // Optional Animation
 }
 
 .logo-text {
-  font-size: 45px;
-  line-height: 62.19px;
-  font-family: 'Bagel Fat One', cursive;
-  font-weight: 400;
-  word-wrap: break-word;
   display: flex;
   align-items: flex-end;
-  gap: 0px;
-  position: relative;
+  font-size: clamp(30px, 6vw, 45px);
+  font-family: 'Bagel Fat One', cursive;
+
+  .loud-text {
+    color: #5669FF;
+  }
+
+  .icket-text {
+    color: #4DB7EC;
+  }
+
+  .t-icon {
+    position: relative;
+    width: 60px;
+    height: 80px;
+    margin: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  }
 }
 
-.loud-text {
-  color: #5669FF;
-  padding-right: 2px;
-}
-
-.icket-text {
-  color: #4DB7EC;
-  padding-left: 2px;
-}
-
-.stylized-t svg {
-  height: 44px;
-  width: 70px;
-  margin-bottom: -2px;
-}
-
+/* Background Gradient Ellipses */
 .ellipse {
   position: absolute;
   border-radius: 50%;
   filter: blur(50px);
   box-shadow: 100px 100px 100px;
   opacity: 0.5;
+  z-index: 0;
 }
 
 .ellipse-top {
@@ -58,7 +63,13 @@
   height: 209px;
   top: -100px;
   right: 0;
-  background: conic-gradient(from 180deg at 50% 50%, rgba(185, 218, 251, 0.4) 0deg, rgba(152, 149, 238, 0.4) 0deg, rgba(197, 84, 146, 0.4) 0deg, rgba(236, 172, 173, 0.4) 96deg);
+  background: conic-gradient(
+      from 180deg at 50% 50%,
+      rgba(185, 218, 251, 0.4) 0deg,
+      rgba(152, 149, 238, 0.4) 0deg,
+      rgba(197, 84, 146, 0.4) 0deg,
+      rgba(236, 172, 173, 0.4) 96deg
+  );
 }
 
 .ellipse-bottom-left {
@@ -66,7 +77,14 @@
   height: 153px;
   bottom: -60px;
   left: -60px;
-  background: conic-gradient(from 180deg at 50% 50%, rgba(185, 218, 251, 0.5) 0deg, rgba(236, 172, 173, 0.5) 96deg, rgba(152, 149, 238, 0.5) 206deg, rgba(144, 162, 248, 0.5) 292deg, rgba(197, 84, 146, 0.5) 360deg);
+  background: conic-gradient(
+      from 180deg at 50% 50%,
+      rgba(185, 218, 251, 0.5) 0deg,
+      rgba(236, 172, 173, 0.5) 96deg,
+      rgba(152, 149, 238, 0.5) 206deg,
+      rgba(144, 162, 248, 0.5) 292deg,
+      rgba(197, 84, 146, 0.5) 360deg
+  );
 }
 
 .ellipse-bottom-right {
@@ -74,5 +92,22 @@
   height: 322px;
   bottom: -80px;
   right: -100px;
-  background: conic-gradient(from 180deg at 50% 50%, rgba(185, 218, 251, 0.5) 0deg, rgba(236, 172, 173, 0.5) 96deg, rgba(152, 149, 238, 0.5) 206deg, rgba(144, 162, 248, 0.5) 292deg, rgba(197, 84, 146, 0.5) 360deg);
+  background: conic-gradient(
+      from 180deg at 50% 50%,
+      rgba(185, 218, 251, 0.5) 0deg,
+      rgba(236, 172, 173, 0.5) 96deg,
+      rgba(152, 149, 238, 0.5) 206deg,
+      rgba(144, 162, 248, 0.5) 292deg,
+      rgba(197, 84, 146, 0.5) 360deg
+  );
+}
+
+/* Optional: smooth floating animation for the logo */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
